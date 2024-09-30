@@ -16,7 +16,7 @@ venv.bak/
 .vscode/
 
 # History
-./history/
+.history/
 
 # Log files
 *.log
