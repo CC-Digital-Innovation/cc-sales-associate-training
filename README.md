@@ -1,0 +1,116 @@
+
+# Computacenter Sales Associate Training
+
+![alt text](https://media.printables.com/media/company/340929/thumbs/cover/832x208/jpg/banner.webp "Raspberry Pi")
+
+## From Sales Associate to Kingmaker n 2 Days
+<!-- PROJECT SHIELDS -->
+
+<div align="center">
+    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
+
+
+## Summary
+Git repo containing all content and assets for Computacenter Sales Associate training.
+
+_Note: If you have any questions or comments you can email me at richard.bocchinfuso@computacenter.com or contact me on any number of collaboration or social platforms._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Built With
+
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+[![Python][python-shield]][python-url]
+[![Markdown][markdown-shield]][markdown-url]
+[![HTML][html-shield]][html-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Usage
+```bash
+# Clone this repository
+$ git clone https://github.com/repo
+``` 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request ツ
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## History
+-  version 0.1 (initial release) - 2024/09/27
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Credits
+* Richard Bocchinfuso <<richard.bocchinfuso@computacenter.com>
+* Jonny Le <<jonny.le@computacenter.com>>
+* Anthony Farina <<anthony.farina@computacenter.com>>
+* Benjamin Verly <<benjamin.verley@computacenter.com>>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## License
+MIT License
+
+Copyright (c) [2024] [Richard Bocchinfuso, Jonny Le, Anthony Farina, Benjamin Verly]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Markdown Badges](https://github.com/Ileriayo/markdown-badges)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[python-shield]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+[python-url]: https://www.python.org/
+[markdown-shield]: https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white
+[markdown-url]: https://www.markdownguide.org/
+[html-shield]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
+[html-url]: https://html.com/html5/
+[repl-shield]: https://replit.com/badge?caption=Amazing%20Badges&variant=small
+[repl-url]: 
+
