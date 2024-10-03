@@ -1,6 +1,13 @@
 ---
 marp: true
 theme: beam
+style: |
+  .columns {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
 paginate: true
 header: Creating Your First GitHub Account
 footer: © 2024 Computacenter Digital Innovation  All Rights Reserved
@@ -8,21 +15,16 @@ footer: © 2024 Computacenter Digital Innovation  All Rights Reserved
 
 <!-- _class: title -->
 # Creating Your First GitHub Account
+Jonny Le
+Computacenter Digital Innovation
+CC Sales Associate Training 10/09/2024 - 10/10/2024
 
 ---
 
-<!--
-footer: ''
--->
-
-<!--
-Git features:
-- branching
-- reverting/undo commits
-- commit timestamp and logs
--->
-
 # Version Control Systems (VCS)
+
+<div class="columns">
+<div style='margin-top: 50px'>
 
 - **What?**
   - Tool to manage code changes over time
@@ -33,15 +35,41 @@ Git features:
   - Subversion (SVN)
   - Mercurial
 
-![bg right fit](./assets/git-logo.png)
-![bg fit](./assets/svn-logo.png)
-![bg 80%](./assets/mercurial-logo.png)
+</div>
+<div class="columns">
+<div>
+
+![w:230](./assets/git-logo.png)
+
+</div>
+<div>
+
+![w:500](./assets/svn-logo.png)
+
+</div>
+<div>
+
+![w:200](./assets/mercurial-logo.png)
+
+</div>
+
+<!--
+** Git features:
+- branching
+- reverting/undo commits
+- commit timestamp and logs
+-->
 
 ---
 
 # GitHub
 
-![bg left 60%](./assets/github-mark.png)
+<div class="columns">
+<div>
+
+![w:450](./assets/github-mark.png)
+
+</div>
 
 - **What?**
   - Cloud-based platform to store, manage, and collaborate on code
@@ -51,9 +79,14 @@ Git features:
   - Ease of use
 - Git ≠ GitHub
 
+</div>
+
 ---
 
 # Create GitHub Account
+
+<div class="columns">
+<div>
 
 - Prepare:
   - Email (and have your inbox ready to verify email)
@@ -65,7 +98,9 @@ Git features:
 3. Verify you're human
 4. Verify email
 
-![bg right 97%](./assets/github-sign-up.png)
+</div>
+
+![](./assets/github-sign-up.png)
 
 ---
 
