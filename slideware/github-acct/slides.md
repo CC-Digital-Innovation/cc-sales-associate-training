@@ -37,24 +37,20 @@ CC Sales Associate Training 10/09/2024 - 10/10/2024
 
 </div>
 <div class="columns">
-<div>
+<div style='margin-top: 80px'>
 
-![w:230](./assets/git-logo.png)
-
-</div>
-<div>
-
-![w:500](./assets/svn-logo.png)
+![](./assets/git-logo.png)
 
 </div>
-<div>
 
+![h:180](./assets/svn-logo.png)
 ![w:200](./assets/mercurial-logo.png)
 
 </div>
+</div>
 
 <!--
-** Git features:
+Git features:
 - branching
 - reverting/undo commits
 - commit timestamp and logs
@@ -67,7 +63,7 @@ CC Sales Associate Training 10/09/2024 - 10/10/2024
 <div class="columns">
 <div>
 
-![w:450](./assets/github-mark.png)
+![w:410](./assets/github-mark.png)
 
 </div>
 
@@ -80,6 +76,14 @@ CC Sales Associate Training 10/09/2024 - 10/10/2024
 - Git ≠ GitHub
 
 </div>
+
+<!--
+GitHub features:
+- forking
+- issue/feature requests
+- automated actions
+- public releases
+-->
 
 ---
 
@@ -122,9 +126,17 @@ CC Sales Associate Training 10/09/2024 - 10/10/2024
 ![bg 99%](./assets/replit-git-connect.png)
 ![bg 50%](./assets/replit-github-connect.png)
 
+<!-- 
+after selecting cog, select "Connect to GitHub"
+ -->
+
 ---
 
 # Connect GitHub to Replit Cont.
 
 ![bg 99%](./assets/github-repo-cp.png)
 ![bg 99%](./assets/replit-git-push.png)
+
+<!-- 
+after copying the link, paste into "Remote Repository" field in Replit
+ -->
