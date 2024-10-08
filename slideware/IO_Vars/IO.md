@@ -8,7 +8,7 @@ style: |
     gap: 1rem;
   }
 paginate: true
-header: 'Presentation Tile'
+header: 'IO, constants, and variables'
 footer: '© 2024 Computacenter Digital Innovation  All Rights Reserved'
 
 ---
@@ -52,7 +52,12 @@ Code is just a set of instructions that gets sent to the cpu to be proccessed. H
 - Other Code
 
 ---
+
+
 # Output
+
+<div class="columns">
+<div>
 ## Hello World!
 ```python
 print("Hello World!")
@@ -61,8 +66,20 @@ print("Hello World!")
 - Python prints stuff to the console with the print function
 - Simplest way to output what your code did
 
+
+
+</div>
+<div>
+
+<br><br>
+<center><img src="./assets/hello.png" alt="Image" height="125"></center>
+
+</div>
+</div>
+
+
 <!--
-Notes:
+** Slide Notes
 -->
 
 ---
@@ -96,12 +113,26 @@ Notes:
 ---
 
 # Variables and Constants
+
+<div class="columns">
+<div>
+
 ## Naming conventions and restrictions
 - Avoid using built in function names
 - Cannot start with a number 
 - two_words or twoWords
 - avoid funny characters
 - put constants in all capital letters
+
+</div>
+<div>
+
+<br><br>
+<center><img src="./assets/nofunny.jpeg" alt="Image" height="400
+"></center>
+
+</div>
+</div>
 
 <!--
 Notes:
@@ -132,8 +163,23 @@ Variables also shouldnt be named the same thing as certain keywords that python 
 ---
 
 # Input
+
+<div class="columns">
+<div>
+
 ## Can we interact with it?
-What if we want to print something else that the code doesn't know about until we tell it?
+What if we want to print something else that the code doesn't know about until we run it?
+
+</div>
+<div>
+
+<br><br>
+<center><img src="./assets/type.jpeg" alt="Image" height="300
+"></center>
+
+</div>
+</div>
+
 
 
 ---

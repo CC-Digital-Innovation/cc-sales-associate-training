@@ -8,6 +8,7 @@ lcd = LCD.Adafruit_CharLCDBackpack(address=LCD_ADDRESS)
 button = Button(4)
 lcd.set_backlight(0)
 
+
 #"main" block
 name = input("Please type you name:")
 
