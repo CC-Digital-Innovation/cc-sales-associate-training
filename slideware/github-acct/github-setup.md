@@ -26,14 +26,14 @@ CC Sales Associate Training 10/09/2024 - 10/10/2024
 <div class="columns">
 <div style='margin-top: 50px'>
 
-- **What?**
-  - Tool to manage code changes over time
 - **Why?**
   - Track and organize different versions
 - **How?**
   - Git
   - Subversion (SVN)
   - Mercurial
+- **What?**
+  - Tool to manage code changes over time
 
 </div>
 <div class="columns">
