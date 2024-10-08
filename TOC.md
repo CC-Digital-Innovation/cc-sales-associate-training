@@ -7,7 +7,7 @@
 - [Replit Slideware](./slideware/anthonys_slides/repl_slides.html)
   - [Replit Link](https://replit.com/)
 - [Github Slideware](./slideware/github-acct/github-setup.html)
-  - [GitHub Setup](https://github.com/)
+  - [GitHub Link](https://github.com/)
 - [MobaXterm Setup](https://mobaxterm.mobatek.net/download-home-edition.html)
   - Create teams
   - Test MobaXterm SSH CrowPi connection
