@@ -115,6 +115,17 @@ CC Sales Associate Training 10/09/2024 - 10/10/2024
 
 
 ---
+# Intros
+- What's your name?
+- Where are you from?
+- Where did you go to school?
+- What did you study?
+- How did you end up here?
+- What are you passionate about?
+- What do you want to get our of the next two days?
+
+
+---
 <!-- _class: title -->
 # Zen and the Art of Innovation
 Rich Bocchinfuso
