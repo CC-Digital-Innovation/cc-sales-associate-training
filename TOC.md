@@ -4,12 +4,14 @@
 - [Intro Slideware](./slideware/intro/intro.html)
 
 ## Basic Setup
-- [Replit Setup](https://replit.com/)
-- [GitHub Setup](https://github.com/)
+- [Replit Slideware](./slideware/anthonys_slides/repl_slides.html)
+  - [Replit Link](https://replit.com/)
+- [Github Slideware](./slideware/github-acct/github-setup.html)
+  - [GitHub Setup](https://github.com/)
 - [MobaXterm Setup](https://mobaxterm.mobatek.net/download-home-edition.html)
-- Create teams
-- Test MobaXterm SSH CrowPi connection
-- Test Thonny
+  - Create teams
+  - Test MobaXterm SSH CrowPi connection
+  - Test Thonny
 
 
 ## Introducing the Concepts (Coding 101)
@@ -29,4 +31,5 @@
 
 `“Everybody in this country should learn to program a computer, because it teaches you how to think.” - Steve Jobs`
 
-
+# The Kingmaker vs. The Fossil
+- [QBR Autoamation Slideware](./slideware/anthonys_slides/qbr_slides.html)
