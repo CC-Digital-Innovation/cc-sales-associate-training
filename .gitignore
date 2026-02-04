@@ -30,3 +30,9 @@ venv.bak/
 
 # Video files
 *.mp4
+
+# Default data directory
+data/
+
+# Default chroma db directory
+chroma_db/
