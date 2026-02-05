@@ -5,8 +5,9 @@ import dotenv
 from langchain.agents import create_agent
 from langchain.agents.middleware import ModelRequest, dynamic_prompt
 from langchain_chroma import Chroma
-from langchain_community.document_loaders import (DirectoryLoader,
-                                                  UnstructuredFileLoader)
+from langchain_community.document_loaders import (BSHTMLLoader, CSVLoader,
+                                                  Docx2txtLoader, DirectoryLoader,
+                                                  PyPDFLoader, TextLoader)
 from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_ollama import ChatOllama, OllamaEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -25,6 +26,7 @@ DEBUG = os.getenv('DEBUG', 'False').lower() in ('true', '1', 't')
 
 logger = logging.getLogger(__name__)
 if DEBUG:
+    # logging.basicConfig(level=logging.DEBUG)
     logger.setLevel(logging.DEBUG)
     ch = logging.StreamHandler()
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -33,10 +35,24 @@ if DEBUG:
     logger.addHandler(ch)
 
 
+loader_mapping = {
+    '.pdf': PyPDFLoader,
+    '.txt': TextLoader,
+    '.csv': CSVLoader,
+    '.html': BSHTMLLoader,
+    '.docx': Docx2txtLoader
+}
+
+def custom_loader(file_path):
+    ext = os.path.splitext(file_path)[1].lower()
+    loader_cls = loader_mapping.get(ext)
+    if loader_cls:
+        return loader_cls(file_path)
+
 def load_files(directory):
     loader = DirectoryLoader(directory,
-                             loader_cls=UnstructuredFileLoader,
-                             exclude=["**/*.png", "**/*.jpg", "**/*.jpeg"],
+                             glob=['**/*.pdf', '**/*.docx', '**/*.csv', '**/*.html', '**/*.txt'],
+                             loader_cls=custom_loader,
                              recursive=True)
     return loader.load()
 
@@ -106,7 +122,7 @@ def main():
         print('Loading documents...')
         docs = load_files(DATA_DIR)
         print(f'Found {len(docs)} documents.')
-
+        logger.debug('\n\n'.join(f'{i+1}. Loaded Document {doc.metadata}' for i, doc in enumerate(docs)))
         # 4. Split documents into chunks
         print('Splitting documents into chunks...')
         splits = RecursiveCharacterTextSplitter().split_documents(docs)
@@ -123,7 +139,7 @@ def main():
         last_query = request.state['messages'][-1].text
         retrieved_docs = vector_store.similarity_search(last_query, k=SEARCH_K)
 
-        logger.debug('\n\n'.join(f'RAG Document {doc.metadata}:\n{doc.page_content[:200]}' for doc in retrieved_docs))
+        logger.debug('\n'.join(f'RAG Document {doc.metadata}:\n{doc.page_content[:200]}\n' for doc in retrieved_docs))
 
         docs_content = '\n\n'.join(doc.page_content for doc in retrieved_docs)
 

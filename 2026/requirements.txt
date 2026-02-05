@@ -1,8 +1,12 @@
 dotenv
 ollama
+chromadb
 langchain
 langchain-text-splitters
 langchain-community
 langchain-ollama
 langchain-chroma
-langchain-unstructured[local]
+bs4
+lxml
+pypdf
+docx2txt
