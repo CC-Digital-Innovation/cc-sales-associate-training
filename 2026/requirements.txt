@@ -10,3 +10,14 @@ bs4
 lxml
 pypdf
 docx2txt
+openai-whisper
+setuptools-rust
+speechrecognition
+torch
+torchaudio
+numpy
+soundfile
+librosa
+pvporcupine
+pyaudio
+pyttsx3
