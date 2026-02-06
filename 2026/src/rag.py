@@ -11,6 +11,7 @@ from langchain_community.document_loaders import (BSHTMLLoader, CSVLoader,
 from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_ollama import ChatOllama, OllamaEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langgraph.checkpoint.memory import InMemorySaver
 
 
 dotenv.load_dotenv()
@@ -81,6 +82,7 @@ def chat(agent):
 
             for step in agent.stream(
                 {'messages': [{'role': 'user', 'content': user_input}]},
+                {"configurable": {"thread_id": "1"}},
                 stream_mode='values',
             ):
                 step['messages'][-1].pretty_print()
@@ -151,7 +153,7 @@ def main():
         return system_message
 
     # 7. Create agent with RAG middleware
-    agent = create_agent(model, tools=[], middleware=[prompt_with_context], debug=DEBUG_AGENT)
+    agent = create_agent(model, tools=[], middleware=[prompt_with_context], checkpointer=InMemorySaver(), debug=DEBUG_AGENT)
 
     # 8. Start chat
     chat(agent)
