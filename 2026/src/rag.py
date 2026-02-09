@@ -7,7 +7,7 @@ from langchain.agents.middleware import ModelRequest, dynamic_prompt
 from langchain_chroma import Chroma
 from langchain_community.document_loaders import (BSHTMLLoader, CSVLoader,
                                                   Docx2txtLoader, DirectoryLoader,
-                                                  PyPDFLoader, TextLoader)
+                                                  PyPDFLoader, TextLoader, UnstructuredPowerPointLoader)
 from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_ollama import ChatOllama, OllamaEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -41,7 +41,8 @@ loader_mapping = {
     '.txt': TextLoader,
     '.csv': CSVLoader,
     '.html': BSHTMLLoader,
-    '.docx': Docx2txtLoader
+    '.docx': Docx2txtLoader,
+    '.pptx': UnstructuredPowerPointLoader,
 }
 
 def custom_loader(file_path):
@@ -52,7 +53,7 @@ def custom_loader(file_path):
 
 def load_files(directory):
     loader = DirectoryLoader(directory,
-                             glob=['**/*.pdf', '**/*.docx', '**/*.csv', '**/*.html', '**/*.txt'],
+                             glob=['**/*.pdf', '**/*.docx', '**/*.csv', '**/*.html', '**/*.txt', '**/*.pptx'],
                              loader_cls=custom_loader,
                              recursive=True)
     return loader.load()
