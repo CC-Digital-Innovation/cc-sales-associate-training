@@ -8,8 +8,8 @@ style: |
     gap: 1rem;
   }
 paginate: true
-header: 'Functions and Libraries'
-footer: '© 2024 Computacenter Digital Innovation  All Rights Reserved'
+header: 'Retrieval Augmented Generation'
+footer: '© 2026 Computacenter Digital Innovation  All Rights Reserved'
 
 ---
 
@@ -22,14 +22,14 @@ CC Sales Associate Training 2/10/2026 - 2/11/2026
 
 ---
 
-# The Problem
+# The Problem with AI
 
 <div class="columns">
 <div>
 
-- Old data
-- Too broad
-- Public data
+* Old data
+* Too broad
+* Public data
 
 </div>
 <div>
@@ -87,10 +87,10 @@ to illustrate the difference?
 
 AI:
 
-- **Cost and Scale:**
-- **Keeping Data Up-to-Date:**
-- **Specificity and Relevance:**
-- **Trust and Explainability:**
+- **Cost and Scale**
+- **Keeping Data Up-to-Date**
+- **Specificity and Relevance**
+- **Trust and Explainability**
 
 "**Think of it this way:** Training a model is like building a giant, complex machine. RAG is like giving that machine a really good, specific tool for the job, and updating that tool whenever needed..."
 
@@ -167,7 +167,6 @@ AI: Okay, let’s try to represent RAG with ASCII art! It’s tricky, but here�
 ```
 
 <!--
-- 'diagram in text' to 'ASCII art'
 - asked to fix the lines
 -->
 
@@ -182,6 +181,7 @@ You: Can you create a diagram of RAG using ASCII art?
 . . .
 You: Can you create the diagram horizontally?
 Copilot:
+
  User Query
       |
       v
@@ -216,3 +216,49 @@ Copilot:
 ```
 
 ![height:460px](../images/rag.png)
+
+---
+
+# How RAG?
+
+<div class="columns">
+<div>
+
+1) **Embed documents**: store documents for retrieval
+2) Search closest match(es) to question
+3) Give document(s) to AI as context to answer the question
+
+</div>
+<div>
+
+```console
+ User Query
+      |
+      v
++-------------+      +-------------------+      +-------------------------+
+| Embed Query | ---> | Vector Store (kNN)| ---> | Retrieved Docs (Top-K) |
++-------------+      +-------------------+      +-------------------------+
+                                                           |
+                                                           v
+                                                +-------------------------+
+                                                |  Construct Prompt       |
+                                                | (Query + Retrieved Docs)|
+                                                +-------------------------+
+                                                           |
+                                                           v
+                                                +-------------------------+
+                                                |   LLM Generates Answer  |
+                                                +-------------------------+
+                                                           |
+                                                           v
+                                                      Response
+```
+
+</div>
+</div>
+
+<!--
+- embedding models
+- multilingual
+- programming languages too
+-->
