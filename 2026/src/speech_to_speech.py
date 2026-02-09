@@ -12,7 +12,15 @@ import wave
 import signal
 import sys
 import pyttsx3
+import dotenv
+import logging
 
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
+dotenv.load_dotenv()
+
+PORCUPINE_ACCESS_KEY = os.environ["PORCUPINE_ACCESS_KEY"]
+KEYWORD_PATH = os.environ['KEYWORD_PATH']
 
 # Load Whisper
 whisper_model = whisper.load_model("base")
@@ -26,12 +34,12 @@ SILENCE_THRESHOLD = 200
 SILENCE_DURATION = 2.0
 
 # Remote model
-# REMOTE_HOST = "http://51.79.30.42:11434"  # Replace with your server's IP
-# MODEL_NAME = "deepseek-r1:8b"             # Replace with the model you have pulled
+REMOTE_HOST = "http://51.79.30.42:11434"  # Replace with your server's IP
+MODEL_NAME = "deepseek-r1:8b"             # Replace with the model you have pulled
 
 # Local model
-REMOTE_HOST = "http://localhost:11434"
-MODEL_NAME = "tinyllama"
+#REMOTE_HOST = "http://localhost:11434"
+#MODEL_NAME = "tinyllama"
 
 
 def handle_interrupt(sig, frame):
@@ -126,8 +134,8 @@ def send_to_ollama(prompt):
 
 def main():
     porcupine = pvporcupine.create(
-        access_key=os.environ["PORCUPINE_ACCESS_KEY"],
-        keyword_paths=["Hey-Oh-llama_en_raspberry-pi_v4_0_0.ppn"],
+        access_key=PORCUPINE_ACCESS_KEY,
+        keyword_paths=[KEYWORD_PATH],
         sensitivities=[0.7]
     )
 
