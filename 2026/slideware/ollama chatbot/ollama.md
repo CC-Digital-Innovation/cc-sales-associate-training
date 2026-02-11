@@ -8,7 +8,6 @@ style: |
     gap: 1rem;
   }
 paginate: true
-header: 'IO, constants, and variables'
 footer: '© 2024 Computacenter Digital Innovation  All Rights Reserved'
 
 ---
